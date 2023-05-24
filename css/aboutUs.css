@@ -1,0 +1,26 @@
+
+section{
+    min-height: 100vh;
+}
+
+.perent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.perent img{
+    height: 33rem;
+    width: 51rem;
+    margin: auto;
+}
+
+.us{
+    color: red;
+    padding: 2rem;
+}
+.us p {
+    color: black;
+
+}
