@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+* {
+  --main-color: #0ef;
+  --transition: 0.4s;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  color: #777;
+  line-height: 1.7;
+  direction: rtl;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #222;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+img {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6f6f6;
+  box-shadow: 0 0 10px inset #333;
+  /* -webkit-border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2196f3;
+}
+
+/* ================== */
+.navbar .navbar-nav .nav-item {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.navbar .navbar-nav .navbar-brand:hover {
+  color: var(--main-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color);
+}
+
+.dropdown-menu {
+  background-color: var(--main-color);
+}
+
+.dropdown-menu a {
+  color: #222;
+}
+
+.dropdown-menu a:hover {
+  color: #222;
+  background-color: white;
+}
+
+.navbar .navbar-brand img {
+  width: 100px;
+  /* border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px; */
+}
+.btn {
+  /* border: 0; */
+  padding: 14px 30px;
+}
+
+.btn-brand {
+  color: #333;
+  background-color: var(--main-color);
+  font-size: 20px;
+}
+
+/* .slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/land.jpg);
+}
+
+.slide-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/land.jpg);
+}
+
+.slide-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/land.jpg);
+} */
+
+.carousel-inner {
+  height: calc(100vh - 76px);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: var(--main-color);
+  color: blue;
+}
+
+.carousel-inner .carousel-item p {
+  font-size: 18px;
+}
+
+.carousel-inner .carousel-item h3 {
+  color: var(--main-color);
+}
+
+/* landing */
+.landing {
+  height: calc(100vh-150px);
+}
+.landing .intero {
+  border-right: 7px solid var(--main-color);
+}
+.landing .text img {
+  width: 100px;
+}
+.landing .image img {
+  height: 430px;
+}
+/* landing */
+/* section-2 */
+.section-2 .box {
+  position: relative;
+  overflow: hidden;
+}
+.section-2 .box::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: var(--main-color);
+  left: -100%;
+  transition: 0.4s;
+  opacity: 0.3;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.section-2 .box::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: var(--main-color);
+  right: -100%;
+  transition: 0.4s;
+  opacity: 0.3;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.section-2 .box:hover::after {
+  right: 0;
+}
+.section-2 .box:hover::before {
+  left: 0;
+}
+.section-2 .box .text {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 10px;
+}
+/* section-2 */
+/* reservation */
+.contact h1 {
+  color: var(--main-color);
+}
+
+.contact form {
+  box-shadow: 0 0 5px var(--main-color);
+}
+
+/* reservation */
+/* footer */
+.footer h1 {
+  color: var(--main-color);
+}
+
+.footer .footer-link .footer-list li a {
+  color: #000;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.footer .footer-link .footer-list li a:hover {
+  color: var(--main-color);
+}
+
+.footer .gmail {
+  color: var(--main-color);
+}
+
+.footer .phone {
+  color: var(--main-color);
+}
+
+.footer .desgin {
+  color: var(--main-color);
+}
+
+.footer .end-footer .icon {
+  color: var(--main-color);
+}
+
+.footer .cloor {
+  color: var(--main-color);
+}
+
+/* footer */
