@@ -4,10 +4,40 @@
     --main-color: #0ef;
     --transition: 0.4s
 }
-
+.scroll-top {
+    background-color: #0037ff;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    opacity: 0.7;
+    right: 20px;
+    font-size: 18px;
+    display: none;
+    position: fixed;
+    bottom: 200px;
+    cursor: pointer;
+    z-index: 10000;
+}
+.scroll-left {
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    opacity: 0.7;
+    left: 25px;
+    font-size: 25px;
+    display: none;
+    position: fixed;
+    bottom: 200px;
+    cursor: pointer;
+    z-index: 10000;
+}
 body {
     font-family: Cairo, sans-serif;
-    color: #777;
+    color: #000;
+    font-weight: 600;
     line-height: 1.7;
     direction: rtl
 }
@@ -21,7 +51,9 @@ h6 {
     font-weight: 700;
     color: #222
 }
-
+.text-logo {
+    font-size: 12px;
+}
 section {
     padding-top: 120px;
     padding-bottom: 120px
@@ -100,6 +132,7 @@ img {
     background: var(--main-color);
     transition: .4s;
     opacity: .3;
+    z-index: 999;
     position: absolute
 }
 
