@@ -17,7 +17,7 @@ const btn = document.querySelector(".scroll-top")
 const btn2 = document.querySelector(".scroll-left");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 150) {
+  if (window.scrollY >= 00) {
     btn.style.display = "block";
     btn2.style.display = "block";
   } else {

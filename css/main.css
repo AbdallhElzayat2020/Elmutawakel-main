@@ -5,7 +5,7 @@
     --transition: 0.4s
 }
 .scroll-top {
-    background-color: #0037ff;
+    background-color: #fff;
     border-radius: 10px;
     border: none;
     padding: 8px;
@@ -68,7 +68,12 @@ a {
     -ms-transition: .4s;
     -o-transition: .4s
 }
-
+.land {
+    background-image: url(../images/main.jpg);
+    height: calc(100vh - 142px);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .carousel-inner .carousel-item h3,
 .contact h1,
 .footer .cloor,
@@ -147,7 +152,7 @@ img {
 
 .landing .text img,
 .navbar .navbar-brand img {
-    width: 100px
+    width: 50px
 }
 
 .btn {
