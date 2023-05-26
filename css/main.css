@@ -74,12 +74,21 @@ a {
     position: fixed;
     left: 45%;
     bottom: 0;
+    z-index: 1000;
+    margin: 0 auto;
+    margin: 0 auto;
     padding: 10px;
     color: white;
+    z-index: 100000;
+    text-align: center;
 }
-
+@media(max-width:767px) {
+    .fix  {
+    left:20% ;
+    }
+}
 .land {
-    background-image: url(../images/main.jpg);
+    background-image: url(../images/clean1.jpg);
     height: calc(100vh - 142px);
     background-repeat: no-repeat;
     background-size: cover;
