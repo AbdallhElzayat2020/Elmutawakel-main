@@ -52,9 +52,6 @@ h6 {
     color: #222
 }
 
-.text-logo {
-    font-size: 12px
-}
 
 section {
     padding-top: 120px;
@@ -254,4 +251,17 @@ img {
     -moz-transition: .4s;
     -ms-transition: .4s;
     -o-transition: .4s
+}
+
+.text-logo {
+    font-size: 12px
+}
+
+@media(max-width:370px) {
+    .text-logo {
+        font-size: 10px
+    }
+    .logo-img {
+        width: 30px;
+    }
 }
