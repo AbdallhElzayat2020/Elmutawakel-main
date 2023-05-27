@@ -6,7 +6,7 @@ ratings.onsubmit = (e) => {
   if (e.target[0].value.length == 0 || e.target[1].value.length == 0) {
     alert("لم تتم اضافه تقيمك تاكد من كتابه البيانات");
   } else {
-    const data = { name: e.target[0].value, message: e.target[0].value };
+    const data = { name: e.target[0].value, message: e.target[1].value };
     axios
       .post("https://star-api-17ya.onrender.com/api/v1/message", data)
       .then(function (response) {
