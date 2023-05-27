@@ -188,19 +188,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <form>
+            <form id="ratings">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">الاسم بالكامل</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
               <label for="textaria" class="form-label"> يسعدنا تقييم  خدماتنا</label>
               <textarea
               class="form-control" aria-placeholder="اكتب تقييمك"
-              name="textaria"
-              id=""
+              name="message"
+              id="textaria"
               placeholder="Write-Your Message"
-            >
-            </textarea>
+            ></textarea>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
@@ -210,47 +209,10 @@
         </div>
       </div>
     </div>
-    
     <section class="araa text-center">
       <h2 class="text-center mb-3">بعض اراء العملاء</h2>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="http://wa.me/+966538774001" class="bg-success text-white p-1 rounded-2"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #03e264"></i> للتواصل</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="http://wa.me/+966538774001" class="bg-success text-white p-1 rounded-2"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #03e264"></i> للتواصل</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="http://wa.me/+966538774001" class="bg-success text-white p-1 rounded-2"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #03e264"></i> للتواصل</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="http://wa.me/+966538774001" class="bg-success text-white p-1 rounded-2"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #03e264"></i> للتواصل</a>
-              </div>
-            </div>
-          </div>
+        <div class="row" id="rating-box">
         </div>
       </div>
     </section>
@@ -335,8 +297,6 @@
         </div>
       </div>
     </div>
-    
-    
     <script src="./js/wow.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
@@ -345,5 +305,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/api.js"></script>
   </body>
 </html>
